@@ -1,0 +1,35 @@
+header {
+    height: 100vh;
+    background-image: url(./images/Abstract-mesh-vector-violet_3840x2160.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    height: 100vh;
+}
+
+.navbar-brand {
+    display: flex;
+    font-size: 4rem;
+    color: #5e62e2;
+    background-color: #070616;
+    justify-content: center;
+    width: 100%;
+    padding: 0%;
+    padding-bottom: 15px;
+}
+
+.navbar-toggler {
+    margin-bottom: 29px;
+    padding: 0%;
+    border: 0px;
+}
+
+.bi {
+    color: #5e62e2;
+}
+
+/* .offcanvas {
+    
+} */

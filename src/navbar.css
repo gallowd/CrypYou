@@ -5,23 +5,28 @@ header {
     background-repeat: no-repeat;
 }
 
+.container-fluid-navbar {
+    background-color: #070616;
+    width: 100%;
+    height: 9rem;
+}
+
 .navbar {
     height: 100vh;
 }
 
 .navbar-brand {
     display: flex;
-    font-size: 4rem;
+    font-size: 5rem;
     color: #5e62e2;
-    background-color: #070616;
     justify-content: center;
-    width: 100%;
     padding: 0%;
-    padding-bottom: 15px;
+    padding-bottom: 24px;
 }
 
 .navbar-toggler {
-    margin-bottom: 29px;
+    margin-bottom: 40px;
+    margin-right: 28px;
     padding: 0%;
     border: 0px;
 }
@@ -30,6 +35,28 @@ header {
     color: #5e62e2;
 }
 
-/* .offcanvas {
-    
-} */
+.offcanvas-header {
+    background-color: #5e62e2;
+}
+
+.offcanvas-body {
+    background-color: #070616;
+}
+
+.offcanvas-title {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.fa-globe {
+    padding-right: 1rem;
+}
+
+.nav-link {
+    font-size: 26px;
+    padding: 1rem;
+}
+
+.nav-icon {
+    padding-right: 1rem;
+}

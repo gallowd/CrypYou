@@ -1,62 +1,66 @@
-header {
+.main {
     height: 100vh;
     background-image: url(./images/Abstract-mesh-vector-violet_3840x2160.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.container-fluid-navbar {
-    background-color: #070616;
-    width: 100%;
-    height: 9rem;
-}
-
-.navbar {
-    height: 100vh;
+.mb-3 {
+    height: 20vh;
+    top: 80vh;
 }
 
 .navbar-brand {
-    display: flex;
-    font-size: 5rem;
-    color: #5e62e2;
-    justify-content: center;
-    padding: 0%;
-    padding-bottom: 24px;
+    position: absolute;
+    left: 39vw;
+    margin-right: 0px;
+    margin-bottom: 1.4rem;
 }
 
-.navbar-toggler {
-    margin-bottom: 40px;
-    margin-right: 28px;
-    padding: 0%;
-    border: 0px;
+.brand {
+    color: #5e62e2;
+    font-size: 12vh;
 }
 
-.bi {
+.navbar-toggler-icon {
+    font-size: 3rem;
     color: #5e62e2;
+    display: none;
 }
 
 .offcanvas-header {
     background-color: #5e62e2;
 }
 
+.offcanvas_tittle {
+    font-size: 6rem;
+    margin-top: 2rem;
+    color: white;
+}
+
+.btn-close {
+    display: none;
+}
+
+.icon_globe {
+    font-size: 7rem;
+    margin-top: -4rem;
+    color: white;
+}
+
 .offcanvas-body {
     background-color: #070616;
+    color: white;
+    font-size: 1.5rem;
 }
 
-.offcanvas-title {
-    text-align: center;
-    font-size: 4rem;
-}
-
-.fa-globe {
-    padding-right: 1rem;
+.nav_icon {
+    margin-top: -8px;
+    font-size: 2rem;
+    margin-right: 10px;
 }
 
 .nav-link {
-    font-size: 26px;
-    padding: 1rem;
-}
-
-.nav-icon {
-    padding-right: 1rem;
+    margin-top: 1.5rem;
+    margin-left: 8px;
 }

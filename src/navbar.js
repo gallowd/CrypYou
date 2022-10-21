@@ -1,3 +1,4 @@
+import "./navbar.css";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -9,21 +10,20 @@ import { IoPhonePortrait } from 'react-icons/io5';
 import { HiHomeModern } from 'react-icons/hi2';
 import { RiGlobalFill } from 'react-icons/ri';
 
-function OffcanvasExample() {
+const navbar = () => {
 return (
     <>
     {[false].map((expand) => (
-        <Navbar key={expand} bg="dark" expand={expand} className="mb-3">
+        <Navbar key={expand} expand={expand} className="mb-3" sticky="top">
         <Container fluid>
             <Navbar.Brand href="../public/index.html"><span className="brand">CrypYou</span></Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-            <Navbar.Offcanvas id={`offcanvasNavbar-expand-${expand}`} aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`} placement="end">
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className="border border-0"/>
+            <Navbar.Offcanvas>
             <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}><RiGlobalFill className="icon_globe"/><span className="offcanvas_tittle">Main</span></Offcanvas.Title>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}><HiHomeModern className="nav_icon_central"/><span className="offcanvas_tittle">Home</span></Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="./index.html"><HiHomeModern className="nav_icon"/>Home</Nav.Link>
                 <Nav.Link href="#action2"><FaUserSecret className="nav_icon"/>Account</Nav.Link>
                 <Nav.Link href="#action3"><FaBitcoin className="nav_icon"/>Crypto</Nav.Link>
                 <Nav.Link href="#action4"><MdContactSupport className="nav_icon"/>About Us</Nav.Link>
@@ -38,4 +38,4 @@ return (
 );
 }
 
-export default OffcanvasExample;
+export default navbar;

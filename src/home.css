@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.home {
+    height: 100%;
+    background-color: #070616;
+}
+
+.main_home {
+    background-image: url("./images/blue-purple-dark-pink-cube-digital-art-4k-abstract.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+p {
+    color: black;
+}
+
+.home_header {
+    height: 80vh;
+}
+.carousel_img {
+    size: contain;
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-caption {
+    top: 20vh
+}
+
+.carousel-indicators {
+    visibility: hidden;
+}
+
+.carousel-control-prev-icon {
+    visibility: hidden;
+}
+
+.carousel-control-next-icon {
+    visibility: hidden;
+}

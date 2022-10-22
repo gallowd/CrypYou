@@ -10,6 +10,16 @@
           "meta[name=theme-color]"
         ]
       }
+    ],
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "margin-inline",
+          "padding-inline",
+          "height: fit-content"
+        ]
+      }
     ]
   }
 }

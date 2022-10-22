@@ -5,14 +5,12 @@
     background-color: #070616;
 }
 
-.main_home {
-    background-image: url("./images/blue-purple-dark-pink-cube-digital-art-4k-abstract.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
+p {
+    color: white;
 }
 
-p {
-    color: black;
+h1 {
+    color: white;
 }
 
 .home_header {
@@ -38,4 +36,91 @@ p {
 
 .carousel-control-next-icon {
     visibility: hidden;
+}
+
+.mainHome_card1 {
+    height: 100vh;
+    padding-inline: 6rem;
+}
+
+.mainHome_card1 {
+    display: flex;
+    padding-top: 8rem;
+}
+
+.mainHome_card1_text {
+    position: absolute;
+    width: 40vw;
+    background-color: #5e62e2;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.mainHome_card1_img {
+    width: 100%;
+    height: fit-content;
+    padding-left: 15%;
+}
+
+.mainHome_card2 {
+    display: flex;
+    padding-inline: 6rem;
+    padding-top: 8rem;
+}
+
+.mainHome_card2_img {
+    width: 85%;
+    height: fit-content;
+}
+
+.mainHome_card2_text {
+    position: absolute;
+    width: 40vw;
+    background-color: #5e62e2;
+    margin-top: 16rem;
+    padding: 2rem;
+    margin-left: 45vw;
+}
+
+.mainHome_backgrounds {
+    height: 100vh;
+    margin-top: 12rem;
+    padding-inline: 6rem;
+}
+
+.card {
+    margin-inline: 5rem;
+    top: 50vh;
+    transform: translateY(-50%);
+    border-radius: 20px;
+}
+
+.card-body {
+    background-color: #5e62e2;
+}
+
+.card-text {
+    color: white;
+}
+
+.card-title {
+    color: white;
+}
+
+.card_backg1 {
+    background-image: url(./images/cardbg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card_backg2 {
+    background-image: url(./images/cardbg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card_backg3 {
+    background-image: url(./images/cardbg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }

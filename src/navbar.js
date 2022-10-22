@@ -8,7 +8,6 @@ import { FaBitcoin } from 'react-icons/fa';
 import { MdContactSupport } from 'react-icons/md';
 import { IoPhonePortrait } from 'react-icons/io5';
 import { HiHomeModern } from 'react-icons/hi2';
-import { RiGlobalFill } from 'react-icons/ri';
 
 const navbar = () => {
 return (

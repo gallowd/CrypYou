@@ -5,10 +5,27 @@ import CardGroup from 'react-bootstrap/CardGroup';
 
 function main_home() {
 
+    const hoverbg1 = () => {
+        document.getElementById("cardBg").classList.remove("card_backg2");
+        document.getElementById("cardBg").classList.remove("card_backg3");
+        document.getElementById("cardBg").classList.add("card_backg1");
+    }
+    const hoverbg2 = () => {
+        document.getElementById("cardBg").classList.remove("card_backg1");
+        document.getElementById("cardBg").classList.remove("card_backg3");
+        document.getElementById("cardBg").classList.add("card_backg2");
+    }
+    const hoverbg3 = () => {
+        document.getElementById("cardBg").classList.remove("card_backg1");
+        document.getElementById("cardBg").classList.remove("card_backg2");
+        document.getElementById("cardBg").classList.add("card_backg3");
+    }
+
+
     function GroupExample() {
         return (
             <CardGroup>
-            <Card id="cardBg1">
+            <Card id="cardBg1" onMouseOver={hoverbg1}>
                 <Card.Body>
                 <Card.Title>Card title</Card.Title>
                 <Card.Text>
@@ -17,7 +34,7 @@ function main_home() {
                 </Card.Text>
                 </Card.Body>
             </Card>
-            <Card id="cardBg2">
+            <Card id="cardBg2" onMouseOver={hoverbg2}>
                 <Card.Body>
                 <Card.Title>Card title</Card.Title>
                 <Card.Text>
@@ -26,7 +43,7 @@ function main_home() {
                 </Card.Text>
                 </Card.Body>
             </Card>
-            <Card id="cardBg3">
+            <Card id="cardBg3" onMouseOver={hoverbg3}>
                 <Card.Body>
                 <Card.Title>Card title</Card.Title>
                 <Card.Text>
@@ -40,48 +57,27 @@ function main_home() {
         );
     }
 
-return (
-    <div className="main_home">
-        <div className="mainHome_card1">
-            <div className="mainHome_card1_text">
-                <h1>NIGHT CITY CHANGES EVERY BODY</h1>
-                <p>Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality. You can customize your character’s cyberware, skillset and playstyle, and explore a vast city where the choices you make shape the story and the world around you.</p>
+    return (
+        <div className="main_home">
+            <div className="mainHome_card1">
+                <div className="mainHome_card1_text">
+                    <h1>NIGHT CITY CHANGES EVERY BODY</h1>
+                    <p>Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality. You can customize your character’s cyberware, skillset and playstyle, and explore a vast city where the choices you make shape the story and the world around you.</p>
+                </div>
+                <img src={Card1} className="mainHome_card1_img"/>
             </div>
-            <img src={Card1} className="mainHome_card1_img"/>
-        </div>
-        <div className="mainHome_backgrounds" id="cardBg">
-            {GroupExample()};
-        </div>
-        <div className="mainHome_card2">
-            <img src={Card2} className="mainHome_card2_img"/>
-            <div className="mainHome_card2_text">
-                <h1>NIGHT CITY CHANGES EVERY BODY</h1>
-                <p>Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality. You can customize your character’s cyberware, skillset and playstyle, and explore a vast city where the choices you make shape the story and the world around you.</p>
+            <div className="mainHome_backgrounds card_backg2" id="cardBg">
+                {GroupExample()};
+            </div>
+            <div className="mainHome_card2">
+                <img src={Card2} className="mainHome_card2_img"/>
+                <div className="mainHome_card2_text">
+                    <h1>NIGHT CITY CHANGES EVERY BODY</h1>
+                    <p>Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality. You can customize your character’s cyberware, skillset and playstyle, and explore a vast city where the choices you make shape the story and the world around you.</p>
+                </div>
             </div>
         </div>
-    </div>
-);
+    );
 }
-
-const cardbg = document.getElementById("cardBg");
-const cardbg1 = document.getElementById("cardBg1");
-const cardbg2 = document.getElementById("cardBg2");
-const cardbg3 = document.getElementById("cardBg3");
-
-cardbg1.addEventListener("mouseover", function() {
-    cardbg.classList.remove("card_backg2");
-    cardbg.classList.remove("card_backg3");
-    cardbg.classList.add("card_backg1");
-});
-cardbg2.addEventListener("mouseover", function() {
-    cardbg.classList.remove("card_backg1");
-    cardbg.classList.remove("card_backg3");
-    cardbg.classList.add("card_backg2");
-});
-cardbg3.addEventListener("mouseover", function() {
-    cardbg.classList.remove("card_backg1");
-    cardbg.classList.remove("card_backg2");
-    cardbg.classList.add("card_backg3");
-});
 
 export default main_home;

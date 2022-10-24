@@ -112,21 +112,21 @@ h1 {
 }
 
 .card_backg1 {
-    background-image: url(./images/cardbg1.jpg);
+    background-image: url(../../images/cardbg1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.3s ease-in-out;
 }
 
 .card_backg2 {
-    background-image: url(./images/cardbg2.jpg);
+    background-image: url(../../images/cardbg2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.3s ease-in-out;
 }
 
 .card_backg3 {
-    background-image: url(./images/cardbg3.jpg);
+    background-image: url(../../images/cardbg3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.3s ease-in-out;

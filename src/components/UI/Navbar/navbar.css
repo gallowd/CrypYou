@@ -30,12 +30,16 @@
     font-size: 4rem;
 }
 span.navbar-toggler-icon {
-    background-image: url("./images/nav_icon1.png");
+    background-image: url("../../../images/nav_icon1.png");
     transition: ease-in-out 0.5s;
 }
 span.navbar-toggler-icon:hover {
-    background-image: url("./images/nav_icon2.png");
+    background-image: url("../../../images/nav_icon2.png");
     font-size: 4.4rem;
+}
+
+.offcanvas {
+    max-width: 2rem;
 }
 
 .offcanvas-header {
@@ -43,7 +47,7 @@ span.navbar-toggler-icon:hover {
 }
 
 .offcanvas_tittle {
-    font-size: 6rem;
+    font-size: 3rem;
     margin-top: 2rem;
     color: white;
 }
@@ -52,21 +56,15 @@ span.navbar-toggler-icon:hover {
     display: none;
 }
 
-.icon_globe {
-    font-size: 7rem;
-    margin-top: -4rem;
-    color: white;
-}
-
 .offcanvas-body {
     background-color: #070616;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .nav_icon {
     margin-top: -8px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-right: 10px;
 }
 
@@ -76,7 +74,8 @@ span.navbar-toggler-icon:hover {
 }
 
 .nav_icon_central {
-    font-size: 6rem;
-    margin-top: -4rem;
+    font-size: 3rem;
+    margin-top: -28px;
+    margin-right: 1rem;
     color: white;
 }

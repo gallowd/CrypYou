@@ -17,7 +17,11 @@ return (
         <Container fluid>
             <Navbar.Brand href="../public/index.html"><span className="brand">CrypYou</span></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className="border border-0"/>
-            <Navbar.Offcanvas>
+            <Navbar.Offcanvas 
+                id={`offcanvasNavbar-expand-${expand}`}
+                aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+                placement="start"
+                style={{ width: '15rem' }}>
             <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}><HiHomeModern className="nav_icon_central"/><span className="offcanvas_tittle">Home</span></Offcanvas.Title>
             </Offcanvas.Header>

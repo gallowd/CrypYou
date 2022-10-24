@@ -1,8 +1,8 @@
-import Navbar from "./navbar.js";
-import "./home.css";
-import Carrousel  from "./home_header.js";
-import mainHome from "./home_main.js"
-import Footer from "./footer.js";
+import Navbar from "./components/UI/Navbar/navbar.js";
+import "./components/Home/home.css";
+import Carrousel  from "./screens/Home/home_header.js";
+import mainHome from "./screens/Home/home_main.js"
+import Footer from "./components/UI/Footer/footer.js";
 
 function App() {
 

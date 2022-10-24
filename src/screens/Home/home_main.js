@@ -1,5 +1,5 @@
-import Card1 from "./images/main1.jpg"
-import Card2 from "./images/main2.jpg"
+import Card1 from "../../images/main1.jpg"
+import Card2 from "../../images/main2.jpg"
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 

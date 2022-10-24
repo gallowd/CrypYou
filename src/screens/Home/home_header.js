@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
-import Img1 from "./images/carousel1.jpg"
-import Img2 from "./images/carousel2.jpg"
-import Img3 from "./images/carousel3.jpg"
+import Img1 from "../../images/carousel1.jpg"
+import Img2 from "../../images/carousel2.jpg"
+import Img3 from "../../images/carousel3.jpg"
 
 const Carrousel = () => {
     return (

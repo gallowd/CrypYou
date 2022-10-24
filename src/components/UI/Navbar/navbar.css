@@ -1,3 +1,7 @@
+.link {
+    text-decoration: none;
+}
+
 .mb-3 {
     height: 20vh;
     top: 80vh;

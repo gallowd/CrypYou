@@ -8,6 +8,7 @@ import { FaBitcoin } from 'react-icons/fa';
 import { MdContactSupport } from 'react-icons/md';
 import { IoPhonePortrait } from 'react-icons/io5';
 import { HiHomeModern } from 'react-icons/hi2';
+import { Link } from "react-router-dom";
 
 const navbar = () => {
 return (
@@ -15,7 +16,7 @@ return (
     {[false].map((expand) => (
         <Navbar key={expand} expand={expand} className="mb-3" sticky="top">
         <Container fluid>
-            <Navbar.Brand href="../public/index.html"><span className="brand">CrypYou</span></Navbar.Brand>
+            <Navbar.Brand href="../public/index.html"><Link to={"/"} className="link"><span className="brand">CrypYou</span></Link></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className="border border-0"/>
             <Navbar.Offcanvas 
                 id={`offcanvasNavbar-expand-${expand}`}
@@ -23,7 +24,7 @@ return (
                 placement="start"
                 style={{ width: '15rem' }}>
             <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}><HiHomeModern className="nav_icon_central"/><span className="offcanvas_tittle">Home</span></Offcanvas.Title>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}><Link to={"/"} className="link"><HiHomeModern className="nav_icon_central"/><span className="offcanvas_tittle">Home</span></Link></Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">

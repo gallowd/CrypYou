@@ -2,6 +2,7 @@ import Navbar from "./navbar.js";
 import "./home.css";
 import Carrousel  from "./home_header.js";
 import mainHome from "./home_main.js"
+import Footer from "./footer.js";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       </div>
       <Navbar sticky="top"/>
       {mainHome()}
+      <Footer/>
     </div>
   );
 }

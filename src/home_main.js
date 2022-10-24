@@ -5,20 +5,30 @@ import CardGroup from 'react-bootstrap/CardGroup';
 
 function main_home() {
 
+
     const hoverbg1 = () => {
         document.getElementById("cardBg").classList.remove("card_backg2");
         document.getElementById("cardBg").classList.remove("card_backg3");
+        document.getElementById("card_text2").innerHTML = ""
+        document.getElementById("card_text3").innerHTML = ""
         document.getElementById("cardBg").classList.add("card_backg1");
+        document.getElementById("card_text1").innerHTML = "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
     }
     const hoverbg2 = () => {
         document.getElementById("cardBg").classList.remove("card_backg1");
         document.getElementById("cardBg").classList.remove("card_backg3");
+        document.getElementById("card_text1").innerHTML = ""
+        document.getElementById("card_text3").innerHTML = ""
         document.getElementById("cardBg").classList.add("card_backg2");
+        document.getElementById("card_text2").innerHTML = "This card has supporting text below as a natural lead-in to additional content."
     }
     const hoverbg3 = () => {
         document.getElementById("cardBg").classList.remove("card_backg1");
         document.getElementById("cardBg").classList.remove("card_backg2");
+        document.getElementById("card_text1").innerHTML = ""
+        document.getElementById("card_text2").innerHTML = ""
         document.getElementById("cardBg").classList.add("card_backg3");
+        document.getElementById("card_text3").innerHTML = "This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action."
     }
 
 
@@ -28,7 +38,7 @@ function main_home() {
             <Card id="cardBg1" onMouseOver={hoverbg1}>
                 <Card.Body>
                 <Card.Title>Card title</Card.Title>
-                <Card.Text>
+                <Card.Text id="card_text1">
                     This is a wider card with supporting text below as a natural lead-in
                     to additional content. This content is a little bit longer.
                 </Card.Text>
@@ -37,19 +47,14 @@ function main_home() {
             <Card id="cardBg2" onMouseOver={hoverbg2}>
                 <Card.Body>
                 <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                    This card has supporting text below as a natural lead-in to
-                    additional content.{' '}
+                <Card.Text id="card_text2">
                 </Card.Text>
                 </Card.Body>
             </Card>
             <Card id="cardBg3" onMouseOver={hoverbg3}>
                 <Card.Body>
                 <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in
-                    to additional content. This card has even longer content than the
-                    first to show that equal height action.
+                <Card.Text id="card_text3">
                 </Card.Text>
                 </Card.Body>
             </Card>
@@ -66,7 +71,7 @@ function main_home() {
                 </div>
                 <img src={Card1} className="mainHome_card1_img"/>
             </div>
-            <div className="mainHome_backgrounds card_backg2" id="cardBg">
+            <div className="mainHome_backgrounds card_backg1" id="cardBg">
                 {GroupExample()};
             </div>
             <div className="mainHome_card2">

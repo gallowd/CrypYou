@@ -7,10 +7,12 @@
 
 p {
     color: white;
+    font-family: 'Audiowide', cursive;
 }
 
 h1 {
     color: white;
+    font-family: 'Audiowide', cursive;
 }
 
 .home_header {
@@ -97,6 +99,7 @@ h1 {
 
 .card-body {
     background-color: #5e62e2;
+    height: 30vh;
 }
 
 .card-text {
@@ -105,6 +108,7 @@ h1 {
 
 .card-title {
     color: white;
+    font-family: 'Audiowide', cursive;
 }
 
 .card_backg1 {

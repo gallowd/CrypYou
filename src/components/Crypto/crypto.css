@@ -1,0 +1,24 @@
+.crypto {
+    width: 100%;
+}
+
+.crypto_header {
+    height: 80vh;
+}
+
+video {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video_capa {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0706163b;
+}

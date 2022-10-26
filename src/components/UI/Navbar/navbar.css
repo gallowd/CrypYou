@@ -11,7 +11,6 @@
     top: 80vh;
     transition: ease-in-out 0.5s;
 }
-
 .mb-3:hover {
     background-color: #070616c0;
 }

@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
 .crypto {
     width: 100%;
+    background-color: #070616;
 }
 
 .crypto_header {
@@ -21,4 +24,85 @@ video {
     width: 100%;
     height: 100%;
     background-color: #0706163b;
+}
+
+.crypto_main {
+    background-image: url("../../images/cryptoBackg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.buscador {
+    height: 20vh;
+    background-color: #070616;
+    margin-top: 8rem;
+    padding-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buscador h1 {
+    color: #5e62e2;
+}
+
+.coins {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10rem;
+    column-gap: 4rem;
+    margin: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+.coin_card {
+    background-color: #070616b7;
+    border-radius: 0rem 8rem 0rem 12rem;
+    border: 5px solid #344469;
+    max-height: 55vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: linear 0.4s;
+}
+.coin_card:hover {
+    background-color:#070616fe;
+}
+
+.coin_card_header {
+    font-family: 'Audiowide', cursive;
+    margin: 0.5rem;
+    margin-left: 0.8rem;
+    display: grid;
+    row-gap: 0.5rem;
+    color: #5e62e2;
+}
+.coin_card_header h5 {
+    color: white;
+}
+
+.coin_img {
+    width: 8rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.coin_card_footer {
+    font-family: 'Audiowide', cursive;
+    color: #5e62e2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 0.8rem;
+}  
+.coin_card_footer h6 {
+    color: white;
+}
+
+.coin_detail {
+    background-color: #070616;
 }

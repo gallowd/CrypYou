@@ -9,7 +9,7 @@ const Router = () => {
             <Routes>
                 <Route path="/" element={Home()}></Route>
                 <Route path="/crypto" element={Crypto()}></Route>
-                <Route path="/crypto/:coinName" element={CoinDetail()}></Route>
+                <Route path="/crypto/:coinName" element={<CoinDetail/>}></Route>
                 <Route path="/*" element={<div><p>ERROR</p></div>}></Route>
             </Routes>
         </BrowserRouter>

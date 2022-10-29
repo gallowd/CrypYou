@@ -1,11 +1,10 @@
 import Navbar from "../../../components/UI/Navbar/navbar";
 import Footer from "../../../components/UI/Footer/footer";
-import "../../UI/Navbar/navbar.css"
-import "../../UI/Footer/footer.css"
 import { useParams } from "react-router-dom";
 
-const CoinDetail = () => {
-    const {coinName} = useParams();
+function CoinDetail() {
+    const {coinName} = useParams()
+    console.log(coinName)
     return (
         <div>
             <Navbar/>

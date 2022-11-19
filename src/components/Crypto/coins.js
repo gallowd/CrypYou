@@ -29,7 +29,7 @@ function Coins() {
             </div>
             <div className="coins">
                 {coins.filter(coin => coin.name.includes(filter)).map((coin, i) => (
-                    <Link to={`/crypto/${coin.name}`} className="link">
+                    <Link to={`/crypto/${coin.id}`} className="link">
                         <div key={i} className="coin_card">
                             <div className="coin_card_header">
                                 <h5>{coin.market_cap_rank}</h5>

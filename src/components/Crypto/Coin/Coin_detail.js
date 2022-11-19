@@ -1,8 +1,10 @@
 import Navbar from "../../../components/UI/Navbar/navbar";
 import Footer from "../../../components/UI/Footer/footer";
 import CoinAPI from "../../../API/cryptoAPI"
+import LineChart from "./coin_grafic";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import "./coin_detail.css"
 
 function CoinDetail() {
     const {coinId} = useParams()
@@ -19,24 +21,36 @@ function CoinDetail() {
     }, [])
 
     return (
-        <div>
+        <div className="coin_page">
             <Navbar/>
-            <div className="coins">
+            <div>
                 {coins.filter(coin => coin.id == `${coinId}`).map((coin, i) => (
-                    <div key={i} className="coin_card">
-                        <div className="coin_card_header">
-                            <h5>{coin.market_cap_rank}</h5>
-                            <h2>{coin.name}</h2>
+                    <div key={i} className="coin_page_container">
+                        <div className="containerLeft">
+                            <img alt={coin.name} src={coin.image} className="coinDetail_img"/>
+                            <div className="containerLeft_text">
+                                <h1><strong>{coin.name}</strong></h1>
+                                <h3>Current Price: <strong>${coin.current_price}</strong></h3>
+                                <h3>Market Price: <strong>${coin.market_cap}</strong></h3>
+                            </div>
                         </div>
-                        <img alt={coin.name} src={coin.image} className="coin_img"/>
-                        <div className="coin_card_footer">
-                            <h2>{coin.symbol}</h2>
-                            <h6>${coin.current_price}</h6>
+                        <div className="containerRight">
+                            <LineChart
+                                year = {coin.price_change_percentage_1y_in_currency}
+                                months = {coin.price_change_percentage_200d_in_currency}
+                                month = {coin.price_change_percentage_30d_in_currency}
+                                twoWeek = {coin.price_change_percentage_14d_in_currency}
+                                week = {coin.price_change_percentage_7d_in_currency}
+                                day = {coin.price_change_percentage_24h_in_currency}
+                                hour = {coin.price_change_percentage_1h_in_currency}
+                            />
                         </div>
                     </div>
                 ))}
             </div>
-            <Footer/>
+            <div className="footer_conin_detail">
+                <Footer/>
+            </div>
         </div>
     );
 }

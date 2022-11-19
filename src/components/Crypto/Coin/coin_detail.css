@@ -1,0 +1,47 @@
+h1, h3 {
+    color: white;
+    font-family: 'Audiowide', cursive;
+    color: #070616;
+}
+
+.coin_page {
+    background-image: url("../../../images/coinPage.jpg");
+    background-blend-mode: darken;
+    background-color: #0706165c;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: fixed;
+}
+
+.coin_page_container {
+    display: flex;
+    height: 77.5vh;
+}
+
+.containerLeft {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.containerLeft_text {
+    padding-top: 2rem;
+}
+
+.coinDetail_img {
+    width: 18rem;
+    height: 18rem;
+    
+}
+
+.containerRight {
+    width: 60vw;
+    padding-inline: 4rem;
+}
+
+.footer_conin_detail {
+    margin-top: -8rem;
+}

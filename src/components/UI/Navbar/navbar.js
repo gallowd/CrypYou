@@ -28,7 +28,7 @@ return (
             </Offcanvas.Header>
             <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#action2"><FaUserSecret className="nav_icon"/>Account</Nav.Link>
+                <Nav.Link href="#action2"><Link to={"/acount"} className="link"><FaUserSecret className="nav_icon"/>Account</Link></Nav.Link>
                 <Nav.Link href="#action3"><Link to={"/crypto"} className="link"><FaBitcoin className="nav_icon"/>Crypto</Link></Nav.Link>
                 <Nav.Link href="#action4"><MdContactSupport className="nav_icon"/>About Us</Nav.Link>
                 <Nav.Link href="#action5"><IoPhonePortrait className="nav_icon"/>Contact Us</Nav.Link>

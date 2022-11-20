@@ -1,13 +1,10 @@
-h1, h3 {
-    color: white;
+.coinText_title, .coinText {
     font-family: 'Audiowide', cursive;
     color: #070616;
 }
 
 .coin_page {
     background-image: url("../../../images/coinPage.jpg");
-    background-blend-mode: darken;
-    background-color: #0706165c;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -25,6 +22,7 @@ h1, h3 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-items: center;
 }
 
 .containerLeft_text {

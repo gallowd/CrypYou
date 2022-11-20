@@ -2,11 +2,15 @@ import Navbar from "../../../components/UI/Navbar/navbar";
 import Footer from "../../../components/UI/Footer/footer";
 import CoinAPI from "../../../API/cryptoAPI"
 import LineChart from "./coin_grafic";
+import Cart from "../../../Context/context";
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import "./coin_detail.css"
 
 function CoinDetail() {
+
+    const {cart, addItem} = useContext(Cart);
+
     const {coinId} = useParams()
 
     const [coins, setCoins] = useState([]);
@@ -29,10 +33,11 @@ function CoinDetail() {
                         <div className="containerLeft">
                             <img alt={coin.name} src={coin.image} className="coinDetail_img"/>
                             <div className="containerLeft_text">
-                                <h1><strong>{coin.name}</strong></h1>
-                                <h3>Current Price: <strong>${coin.current_price}</strong></h3>
-                                <h3>Market Price: <strong>${coin.market_cap}</strong></h3>
+                                <h1 className="coinText_title"><strong>{coin.name}</strong></h1>
+                                <h3 className="coinText">Current Price: <strong>${coin.current_price}</strong></h3>
+                                <h3 className="coinText">Market Price: <strong>${coin.market_cap}</strong></h3>
                             </div>
+                            <button onClick={() => addItem(coinId)}>Add to wallet</button>
                         </div>
                         <div className="containerRight">
                             <LineChart

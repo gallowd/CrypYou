@@ -9,7 +9,7 @@ import "./coin_detail.css"
 
 function CoinDetail() {
 
-    const {cart, addItem} = useContext(Cart);
+    const {addItem} = useContext(Cart);
 
     const {coinId} = useParams()
 
@@ -37,7 +37,7 @@ function CoinDetail() {
                                 <h3 className="coinText">Current Price: <strong>${coin.current_price}</strong></h3>
                                 <h3 className="coinText">Market Price: <strong>${coin.market_cap}</strong></h3>
                             </div>
-                            <button onClick={() => addItem(coinId)}>Add to wallet</button>
+                            <button onClick={() => addItem(coin, coin.id)}>Add to wallet</button>
                         </div>
                         <div className="containerRight">
                             <LineChart

@@ -7,18 +7,18 @@ const ContextProvider = ({ children }) => {
 
     const carrito = cart
 
-    function inCart(item) {
-        return cart.some((el) => el === item)
+    function inCart(itemID) {
+        return cart.some((el) => `${el.id}` == itemID)
     }
 
-    function addItem(item) {
-        if (inCart(item) == false) {
+    function addItem(item, itemID) {
+        if (inCart(itemID) == false) {
             carrito.push(item)
             setCart(carrito)
         } else {
             return false 
         }
-        console.log(cart)
+        console.log(carrito)
     }
 
     const removeItem = (item) => {

@@ -8,29 +8,28 @@ const ContextProvider = ({ children }) => {
     const carrito = cart
 
     function inCart(itemID) {
-        return cart.some((el) => `${el.id}` == itemID)
+        return cart.some((el) => el.id == itemID)
     }
 
     function addItem(item, itemID) {
         if (inCart(itemID) == false) {
             carrito.push(item)
             setCart(carrito)
-        } else {
-            return false 
+            console.log(carrito)
         }
-        console.log(carrito)
     }
 
-    const removeItem = (item) => {
-        const newProducts = cart.filter((p) => p !== item);
+    function removeItem(itemID) {
+        const newProducts = carrito.filter((p) => p.id !== itemID);
         setCart(newProducts);
+        console.log(newProducts)
     }
 
     function deleteItems() {
         setCart([])
     }
 
-    return <cartContext.Provider value={{ cart, addItem }}>
+    return <cartContext.Provider value={{ cart, addItem, removeItem, deleteItems }}>
         {children}
     </cartContext.Provider>
 }

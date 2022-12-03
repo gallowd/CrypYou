@@ -1,4 +1,4 @@
-h1 {
+.title {
     color: black;
 }
 
@@ -10,8 +10,51 @@ h1 {
 }
 
 .wallet {
+    min-height: 80vh;
 }
 
 .footer_wallet {
     margin-top: -4rem;
+}
+
+.coin_button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 80px;
+    background: black;
+    color: white;
+    font-family: 'Audiowide', cursive;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.coin_button::after {
+    content: "";
+    width: 120%;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(-100% - 100px);
+    border-right: 80px solid transparent;
+    border-bottom: 80px solid #2bbaf1;
+    transition: .4s ease-in-out all;
+}
+.coin_button:hover::after {
+    left: 0px;
+}
+
+.button_spam {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    transition: .3s ease all;
 }

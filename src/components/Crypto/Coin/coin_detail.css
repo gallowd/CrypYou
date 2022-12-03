@@ -8,12 +8,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    background-position: fixed;
+    background-attachment: fixed;
 }
 
 .coin_page_container {
     display: flex;
-    height: 77.5vh;
+    min-height: 80vh;
 }
 
 .containerLeft {
@@ -41,5 +41,5 @@
 }
 
 .footer_coin_detail {
-    margin-top: -8rem;
+    margin-top: -20.3vh;
 }

@@ -9,7 +9,7 @@ import "./coin_detail.css"
 
 function CoinDetail() {
 
-    const {addItem} = useContext(Cart);
+    const {addItem, removeItem, cart} = useContext(Cart);
 
     const {coinId} = useParams()
 
@@ -18,6 +18,15 @@ function CoinDetail() {
     const getCoins = async () => {
         const coins = await CoinAPI();
         setCoins(coins)
+    }
+
+    const ButtonChange = ({Id, list, item}) => {
+        let test = list.some((el) => el.id == Id)
+        return (
+            <>
+                {test ? <button className="coin_button" onClick={() => removeItem(Id)}><spam className="button_spam">Remove</spam></button>: <button className="coin_button" onClick={() => addItem(item, Id)}><spam className="button_spam">Add</spam></button>}
+            </>
+        )
     }
 
     useEffect(() => {
@@ -37,7 +46,7 @@ function CoinDetail() {
                                 <h3 className="coinText">Current Price: <strong>${coin.current_price}</strong></h3>
                                 <h3 className="coinText">Market Price: <strong>${coin.market_cap}</strong></h3>
                             </div>
-                            <button onClick={() => addItem(coin, coin.id)}>Add to wallet</button>
+                            <ButtonChange Id={coin.id} list={cart} item={coin}/>
                         </div>
                         <div className="containerRight">
                             <LineChart

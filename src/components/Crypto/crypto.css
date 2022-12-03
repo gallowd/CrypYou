@@ -123,3 +123,7 @@ video {
 .coin_card_footer h6 {
     color: white;
 }
+
+.crypto_footer {
+    margin-top: -9rem;
+}

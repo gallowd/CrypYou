@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 .home {
+    z-index: 1;
     height: 100%;
     background-color: #070616;
 }

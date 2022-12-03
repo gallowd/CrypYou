@@ -53,7 +53,7 @@ function CoinDetail() {
                     </div>
                 ))}
             </div>
-            <div className="footer_conin_detail">
+            <div className="footer_coin_detail">
                 <Footer/>
             </div>
         </div>

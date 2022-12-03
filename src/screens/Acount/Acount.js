@@ -2,26 +2,30 @@ import Navbar from "../../components/UI/Navbar/navbar";
 import Footer from "../../components/UI/Footer/footer";
 import Cart from "../../Context/context";
 import { useContext, useState, useEffect } from "react";
+import "../../components/Account/wallet.css"
 
 function Acount() {
 
-    const [wallet, setWallet] = useState([])
     const {cart} = useContext(Cart)
+    const [wallet, setWallet] = useState([])
 
     useEffect(() => {
         setWallet(cart);
     }, [])
 
     return (
-        <div>
-            <Navbar/>
-            <button onClick={() => console.log(wallet)}>ver</button>
-                {wallet.map((c, i) => {
-                    <div key={i}>
-                        <p>{c.id}</p>
+        <div className="acount">
+            <Navbar sticky="top"/>
+            <div className="wallet">
+                {wallet.map((coin) => (
+                    <div key={coin.id}>
+                        <h1>{coin.name}</h1>
                     </div>
-                })}
-            <Footer/>
+                ))}
+            </div>
+            <div className="footer_wallet">
+                <Footer/>
+            </div>
         </div>
     );
 }

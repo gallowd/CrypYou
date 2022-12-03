@@ -15,7 +15,9 @@ function Crypto() {
             <div className="crypto_main">
                 {Coins()}
             </div>
-            <Footer/>
+            <div className="crypto_footer">
+                <Footer/>
+            </div>
         </div>
     );
 }

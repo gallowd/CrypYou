@@ -1,0 +1,17 @@
+h1 {
+    color: black;
+}
+
+.acount {
+    background-image: url(../../images/wallet2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wallet {
+}
+
+.footer_wallet {
+    margin-top: -4rem;
+}

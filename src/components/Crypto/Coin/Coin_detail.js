@@ -20,11 +20,27 @@ function CoinDetail() {
         setCoins(coins)
     }
 
-    const ButtonChange = ({Id, list, item}) => {
-        let test = list.some((el) => el.id == Id)
+    const [isAdded, setAdded] = useState(true)
+
+    useEffect(() => {
+        const test = cart.some((el) => el.id == coinId)
+        test ? setAdded(true) : setAdded(false)
+    }, [])
+
+    function removeCoin(id) {
+        removeItem(id)
+        setAdded(false)
+    }
+
+    function addCoin(item, id) {
+        addItem(item, id)
+        setAdded(true)
+    }
+
+    const ButtonChange = ({Id, item}) => {
         return (
             <>
-                {test ? <button className="coin_button" onClick={() => removeItem(Id)}><spam className="button_spam">Remove</spam></button>: <button className="coin_button" onClick={() => addItem(item, Id)}><spam className="button_spam">Add</spam></button>}
+                {isAdded ? <button className="coin_button" onClick={() => removeCoin(Id)}><spam className="button_spam">Remove</spam></button>: <button className="coin_button" onClick={() => addCoin(item, Id)}><spam className="button_spam">Add</spam></button>}
             </>
         )
     }

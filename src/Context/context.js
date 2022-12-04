@@ -25,11 +25,7 @@ const ContextProvider = ({ children }) => {
         console.log(newProducts)
     }
 
-    function deleteItems() {
-        setCart([])
-    }
-
-    return <cartContext.Provider value={{ cart, addItem, removeItem, deleteItems }}>
+    return <cartContext.Provider value={{ cart, addItem, removeItem }}>
         {children}
     </cartContext.Provider>
 }

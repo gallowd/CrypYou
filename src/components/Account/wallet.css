@@ -13,7 +13,7 @@
     min-height: 80vh;
     padding-inline: 2rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .saved_coins {
@@ -21,80 +21,59 @@
     width: 100%;
     height: 18vh;
     align-items: center;
+    justify-content: space-between;
+    background-color: #070616;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    transition: .3s ease all;
+}
+.saved_coins:hover {
+    background-color: #17154b;
 }
 
 .wallet_img {
     width: 6rem;
     height: 6rem;
-    margin-inline: 2rem;
 }
 
 .wallet_symbol {
     font-family: 'Audiowide', cursive;
     color: white;
-    margin-inline: 2rem;
 }
 
 .wallet_price {
     font-family: 'Audiowide', cursive;
     color: white;
-    margin-inline: 2rem;
+}
+
+.wallet_change {
+    font-family: 'Audiowide', cursive;
+    color: white;
+}
+.number_red {
+    color: rgb(205, 1, 1);
+}
+.number_green {
+    color: green;
 }
 
 .wallet_market_price {
     font-family: 'Audiowide', cursive;
     color: white;
-    margin-inline: 2rem;
 }
 
 .delete_icon {
     width: 5rem;
     height: 5rem;
+    color: #5e62e2;
+    transition: .3s ease all;
+}
+.delete_icon:hover {
     color: rgb(205, 1, 1);
 }
 
 .footer_wallet {
     margin-top: -4rem;
-}
-
-.coin_button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    height: 80px;
-    background: black;
-    color: white;
-    font-family: 'Audiowide', cursive;
-    font-size: 20px;
-    font-weight: 500;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: .3s ease all;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-}
-.coin_button::after {
-    content: "";
-    width: 120%;
-    height: 40px;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: calc(-100% - 100px);
-    border-right: 80px solid transparent;
-    border-bottom: 80px solid #2bbaf1;
-    transition: .4s ease-in-out all;
-}
-.coin_button:hover::after {
-    left: 0px;
-}
-
-.button_spam {
-    position: relative;
-    z-index: 2;
-    font-size: 3rem;
-    transition: .3s ease all;
 }

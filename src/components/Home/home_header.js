@@ -13,7 +13,7 @@ const Carrousel = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h1>First slide label</h1>
+                    <h1 className="carousel_text"><strong>CRYPTOCURRENCY TRACKING</strong></h1>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
@@ -23,7 +23,7 @@ const Carrousel = () => {
                     alt="Second slide"
                 />
                 <Carousel.Caption>
-                    <h1>Second slide label</h1>
+                    <h1 className="carousel_text"><strong>CONTINUOUS DATA UPDATE</strong></h1>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
@@ -33,7 +33,7 @@ const Carrousel = () => {
                     alt="Third slide"
                 />
                 <Carousel.Caption>
-                    <h1>Third slide label</h1>
+                    <h1 className="carousel_text"><strong>SAVING OF YOUR FAVORITE CRYPTOCURRENCIES</strong></h1>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

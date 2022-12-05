@@ -24,7 +24,7 @@ ChartJS.register(
     Filler,
 );
 
-ChartJS.defaults.color = '#070616';
+ChartJS.defaults.color = 'white';
 ChartJS.defaults.font.family = 'Audiowide';
 ChartJS.defaults.font.size = 14;
 

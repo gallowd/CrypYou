@@ -1,6 +1,6 @@
 import Navbar from "../../components/UI/Navbar/navbar";
 import Footer from "../../components/UI/Footer/footer";
-import CryptoVideo from "../../videos/cryptoVideo.mp4";
+import CryptoVideo from "../../videos/cryptoVideo.webm";
 import "../../components/Crypto/crypto.css"
 import Coins from "../../components/Crypto/coins"
 

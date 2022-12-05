@@ -10,15 +10,6 @@ function Acount() {
 
     const { cart, removeItem } = useContext(Cart)
 
-    // const NumberColor = ({percentage}) => {
-    //     return (
-    //         <>
-    //             {percentage > 0 ? <h4 className="wallet_change">{coin.price_change_percentage_24h}%</h4> : <h4 className="wallet_change">{coin.price_change_percentage_24h}%</h4>}
-    //         </>
-    //     )
-    // }
-
-
     return (
         <div className="acount">
             <Navbar sticky="top"/>

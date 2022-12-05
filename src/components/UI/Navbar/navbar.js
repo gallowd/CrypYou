@@ -5,8 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { FaUserSecret } from 'react-icons/fa';
 import { FaBitcoin } from 'react-icons/fa';
-import { MdContactSupport } from 'react-icons/md';
-import { IoPhonePortrait } from 'react-icons/io5';
 import { HiHomeModern } from 'react-icons/hi2';
 import { Link } from "react-router-dom";
 
@@ -30,8 +28,6 @@ return (
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                 <Nav.Link href="#action2"><Link to={"/acount"} className="link"><FaUserSecret className="nav_icon"/>Account</Link></Nav.Link>
                 <Nav.Link href="#action3"><Link to={"/crypto"} className="link"><FaBitcoin className="nav_icon"/>Crypto</Link></Nav.Link>
-                <Nav.Link href="#action4"><MdContactSupport className="nav_icon"/>About Us</Nav.Link>
-                <Nav.Link href="#action5"><IoPhonePortrait className="nav_icon"/>Contact Us</Nav.Link>
                 </Nav>
             </Offcanvas.Body>
             </Navbar.Offcanvas>

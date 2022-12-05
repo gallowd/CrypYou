@@ -41,7 +41,7 @@ video {
 }
 
 .crypto_main {
-    background-image: url("../../images/cryptoBackg.png");
+    background-image: url("../../images/cryptoBackg.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
